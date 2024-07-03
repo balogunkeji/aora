@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export const HomeLayout = () => {
+const Tomi = () => {
   return (
     <View>
-      <Text>HomeLayout</Text>
+      <Text>Tomi</Text>
     </View>
   )
 }
 
- 
+export default Tomi
 
 const styles = StyleSheet.create({})

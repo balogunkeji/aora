@@ -1,14 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { View, Text } from 'react-native'
 import React from 'react'
 
-const Tomi = () => {
+const Create = () => {
   return (
     <View>
-      <Text>Tomi</Text>
+      <Text>Create</Text>
     </View>
   )
 }
 
-export default Tomi
-
-const styles = StyleSheet.create({})
+export default Create

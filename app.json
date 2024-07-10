@@ -14,15 +14,16 @@
     },
     "ios": {
       "supportsTablet": true,
-      "package": "com.tomi.aora"
+      "package": "com.tomi.aora",
+      "bundleIdentifier": "com.tomisintoyo.aora"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.tomisintoyo.aora"
     },
-    
     "web": {
       "bundler": "metro",
       "output": "static",
@@ -33,6 +34,20 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "380101e7-7373-48d7-82d0-caba47547c57"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/380101e7-7373-48d7-82d0-caba47547c57"
     }
   }
 }

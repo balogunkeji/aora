@@ -1,7 +1,10 @@
 import { View, Text, StyleSheet, ScrollView, Image } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { images } from "@/constants";
+import { images } from "../constants";
+import CustomButton from "@/components/CustomButton";
+import { StatusBar } from "expo-status-bar";
+import { router } from "expo-router";
 
 function Home() {
   return (
@@ -33,8 +36,10 @@ function Home() {
             Where creativity meets innovation: embark on a journey of limitless
             exploration with Aora
           </Text>
+          <CustomButton title={"Continue with Email"} handlePress={() => router.push('/sign-in')} containerStyles="w-full mt-7"/>
         </View>
       </ScrollView>
+      <StatusBar backgroundColor="#161622" style="light"/>
     </SafeAreaView>
   );
 }
